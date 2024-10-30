@@ -1,0 +1,153 @@
+.guestWithDate-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.GuestWithDate-H3 {
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    color: #333333; /* Darker color for a refined text */
+    margin-bottom: 15px;
+}
+
+.guestWithDate-counter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.guestWithDate-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.guestWithDate-counter {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.guestWithDate-counter button {
+    background-color: white;
+    border: none;
+    color: #004d43;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.guestWithDate-counter span {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.guestWithDate-count {
+    font-size: 17px;
+    font-weight: 600;
+    width: 20px;
+    background-color: #004d43;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-left: -15px;
+}
+
+.guestWithDate-confirm-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 11px 30px;
+    background-color: #004d43;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.guestWithDate-confirm-button:hover{
+    background-color: #305656;
+    box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+    transition: 0.3s ease; 
+    color: white;
+}
+
+.guestWithDate-GuestList-edit {
+    margin-left: auto; /* Pushes the Edit button to the right */
+}
+
+.guestWithDate-Edit-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 11px 30px;
+    background-color: #004d43;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.guestWithDate-GuestList-edit:hover{
+    background-color: #305656;
+    box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+    transition: 0.3s ease; 
+    color: white;
+}
+
+.Date-span{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 10px;
+}
+.span-date-counter{
+    margin-left: -15px;
+    background-color: #004d43;
+    padding: 9px 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    min-width: fit-content;
+}
+.date-text-span{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #004d43;
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 10px;
+    height: 20px;
+    min-width: fit-content;
+    padding-left: 10px;
+    margin-left: -5px;
+}

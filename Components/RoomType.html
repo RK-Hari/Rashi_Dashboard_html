@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Types</title>
+    <link rel="stylesheet" href="../Styles/RoomType.css">
+</head>
+<body>
+    <div class="room-card">
+        <div class="room-type-container">
+            <div class="room-header">
+                <div class="room-type">
+                    <h3>Type 1 | <span class="rooms-available">3 Rooms Available</span></h3>
+                    <p>Amenities</p>
+                    <div class="amenities">
+                        <span>🛁</span>
+                        <span>♨</span>
+                    </div>
+                </div>
+                <div class="room-occupancy">
+                    <p>Max Occupancy</p>
+                    <div class="occupancy-icons">
+                        <span>👤👤</span>
+                        <span>🙂</span>
+                    </div>
+                </div>
+                <button class="dropdown-button" onclick="toggleDropdown('type1')">↓</button>
+            </div>
+
+            <div class="room-details" id="type1" style="display: none;">
+                <div class="single-room-details">
+                    <p>Room 101</p>
+                    <div class="occupant-controls">
+                        <div class="Room-counter">
+                            <button onclick="changeCount('adults', -1)">-</button>
+                            <span>Adults</span>
+                            <button onclick="changeCount('adults', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="adults">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('kids', -1)">-</button>
+                            <span>Kids</span>
+                            <button onclick="changeCount('kids', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="kids">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('beds', -1)">-</button>
+                            <span>Beds</span>
+                            <button onclick="changeCount('beds', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="beds">1</div>
+                    </div>
+                    <div class="meal-plans">
+                        <label><input type="radio" name="meal-plan-101" value="AP"> AP</label>
+                        <label><input type="radio" name="meal-plan-101" value="CP"> CP</label>
+                        <label><input type="radio" name="meal-plan-101" value="MCP"> MCP</label>
+                    </div>
+                </div>
+                <div class="single-room-details">
+                    <p>Room 102</p>
+                    <div class="occupant-controls">
+                        <div class="Room-counter">
+                            <button onclick="changeCount('adults', -1)">-</button>
+                            <span>Adults</span>
+                            <button onclick="changeCount('adults', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="adults">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('kids', -1)">-</button>
+                            <span>Kids</span>
+                            <button onclick="changeCount('kids', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="kids">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('beds', -1)">-</button>
+                            <span>Beds</span>
+                            <button onclick="changeCount('beds', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="beds">1</div>
+                    </div>
+                    <div class="meal-plans">
+                        <label><input type="radio" name="meal-plan-102" value="AP"> AP</label>
+                        <label><input type="radio" name="meal-plan-102" value="CP"> CP</label>
+                        <label><input type="radio" name="meal-plan-102" value="MCP"> MCP</label>
+                    </div>
+                </div>
+                <div class="single-room-details">
+                    <p>Room 103</p>
+                    <div class="occupant-controls">
+                        <div class="Room-counter">
+                            <button onclick="changeCount('adults', -1)">-</button>
+                            <span>Adults</span>
+                            <button onclick="changeCount('adults', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="adults">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('kids', -1)">-</button>
+                            <span>Kids</span>
+                            <button onclick="changeCount('kids', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="kids">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('beds', -1)">-</button>
+                            <span>Beds</span>
+                            <button onclick="changeCount('beds', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="beds">1</div>
+                    </div>
+                    <div class="meal-plans">
+                        <label><input type="radio" name="meal-plan-103" value="AP"> AP</label>
+                        <label><input type="radio" name="meal-plan-103" value="CP"> CP</label>
+                        <label><input type="radio" name="meal-plan-103" value="MCP"> MCP</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="room-type-container">
+            <div class="room-header">
+                <div class="room-type">
+                    <h3>Type 2 | <span class="rooms-available">2 Rooms Available</span></h3>
+                    <p>Amenities</p>
+                    <div class="amenities">
+                        <span>🛁</span>
+                        <span>♨</span>
+                    </div>
+                </div>
+                <div class="room-occupancy">
+                    <p>Max Occupancy</p>
+                    <div class="occupancy-icons">
+                        <span>👤👤</span>
+                        <span>🙂</span>
+                    </div>
+                </div>
+                <button class="dropdown-button" onclick="toggleDropdown('type2')">↓</button>
+            </div>
+
+            <div class="room-details" id="type2" style="display: none;">
+                <div class="single-room-details">
+                    <p>Room 201</p>
+                    <div class="occupant-controls">
+                        <div class="Room-counter">
+                            <button onclick="changeCount('adults', -1)">-</button>
+                            <span>Adults</span>
+                            <button onclick="changeCount('adults', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="adults">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('kids', -1)">-</button>
+                            <span>Kids</span>
+                            <button onclick="changeCount('kids', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="kids">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('beds', -1)">-</button>
+                            <span>Beds</span>
+                            <button onclick="changeCount('beds', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="beds">1</div>
+                    </div>
+                    <div class="meal-plans">
+                        <label><input type="radio" name="meal-plan-201" value="AP"> AP</label>
+                        <label><input type="radio" name="meal-plan-201" value="CP"> CP</label>
+                        <label><input type="radio" name="meal-plan-201" value="MCP"> MCP</label>
+                    </div>
+                </div>
+                <div class="single-room-details">
+                    <p>Room 202</p>
+                    <div class="occupant-controls">
+                        <div class="Room-counter">
+                            <button onclick="changeCount('adults', -1)">-</button>
+                            <span>Adults</span>
+                            <button onclick="changeCount('adults', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="adults">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('kids', -1)">-</button>
+                            <span>Kids</span>
+                            <button onclick="changeCount('kids', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="kids">1</div>
+
+                        <div class="Room-counter">
+                            <button onclick="changeCount('beds', -1)">-</button>
+                            <span>Beds</span>
+                            <button onclick="changeCount('beds', 1)">+</button>
+                        </div>
+                        <div class="Room-count" id="beds">1</div>
+                    </div>
+                    <div class="meal-plans">
+                        <label><input type="radio" name="meal-plan-202" value="AP"> AP</label>
+                        <label><input type="radio" name="meal-plan-202" value="CP"> CP</label>
+                        <label><input type="radio" name="meal-plan-202" value="MCP"> MCP</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Scripts/RoomType.js"></script>
+</body>
+</html>

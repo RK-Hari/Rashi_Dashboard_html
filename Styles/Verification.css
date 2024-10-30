@@ -1,0 +1,135 @@
+.swal-title, .swal-text {
+    font-family: 'Poppins', sans-serif;
+    color: #233d3d;
+}  
+.swal-confirm-btn{
+    font-family: 'Poppins', sans-serif;
+    background-color: #233d3d;
+}
+
+.Verfication-container {
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 1px solid #e0e0e0; /* Border for a clean, professional look */
+}
+
+.Verification-header {
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    color: #333333; /* Darker color for a refined text */
+}
+
+.Verification-input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 15px;
+}
+
+.Verification-input {
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #233d3d; /* Border color to match the button */
+    z-index: 999;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.Verification-input:focus {
+    border-color: #233d3d; /* Darker blue on focus */
+    box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+}
+
+.Verification-input-container button {
+    padding: 10px;
+    margin-left: -15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #233d3d;
+    color: #fff;
+    font-weight: 500;
+    min-width: 100px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow for depth */
+}
+
+.Verification-input-container button:hover {
+    background-color: #305656;
+    box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+}
+
+.Verification-checkbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.verification-checkbox:checked {
+    background-color: #233d3d;
+    border-color: #233d3d;
+  }
+
+.Verification-checkbox-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Verfication-checkbox-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.verification-checkbox {
+    height: 20px;
+}
+
+.Verfifcation-checkbox-text {
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #555555; 
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #007bff;
+    outline: none;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* Input field styling based on state */
+  .input-error {
+    border: 2px solid red;
+    background-color: #ffe5e5;
+  }
+  
+  .input-success {
+    border: 2px solid green;
+    background-color: #eaffea;
+  }
+  

@@ -1,0 +1,179 @@
+.card-container {
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+  
+  .card-content {
+    background: linear-gradient(135deg, #233d3d, #3f9191);
+
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    min-width: 360px;
+   
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .company-name {
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .card-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card-holder p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card-number {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+  }
+  
+  .card-balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Rashi-notify{
+    background-color: white;
+    color: #233d3d;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+    border-radius: 7px;
+    border: solid 1.5px #233d3d;
+    font-weight: 500;
+  }
+  
+  .card-balance p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .Clientmembercard-container-checkin button {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.75rem;
+    min-width: 350px;
+    width: 100%;
+    background-color: #233d3d;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.Clientmembercard-container-checkin button:hover {
+  background-color: #305656;
+  box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+}
+
+.Clientmembercard-container-checkin button:focus,
+.Clientmembercard-container-checkin button:active {
+  background-color: #305656;
+    box-shadow: none;
+    transform: scale(0.98); 
+}
+
+
+.membership-clients-details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  min-width: 360px;
+  width: 90%;
+}
+
+.membership-clients-details-heading,
+.membership-family-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mambership-own-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mambership-own-details-container div {
+  display: flex;
+  font-size: 0.95rem;
+}
+
+.mambership-own-details-container p {
+  margin: 0;
+}
+
+.membership-clients-details .Membership-name-container,
+.membership-clients-details .Membership-Dob-container,
+.membership-clients-details .Membership-phone-container,
+.membership-clients-details .Membership-id-container,
+.membership-clients-details .Membership-validity-container,
+.membership-clients-details .Membership-package-container,
+.membership-clients-details .Membership-points-container {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.membership-family-heading {
+  margin-top: 20px;
+}
+
+.Membership-Family-members ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.Membership-Family-members li {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.Membership-Family-members span{
+  font-size: 0.95rem;
+font-weight: 600;
+}
+
+.membership-clients-details div p:first-child {
+  font-weight: 600;
+  margin-right: 10px;
+}

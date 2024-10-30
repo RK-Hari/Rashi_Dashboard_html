@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/GuestList.css"> <!-- Link to your CSS file -->
+    <title>Guest List</title>
+</head>
+<body>
+
+    <div class="guest-list">
+        <div class="GuestH3">Guest List</div>
+        <div class="counter-group">
+            <!-- Adult Counter -->
+            <div class="counter">
+                <button onclick="handleAdultChange(-1)">-</button>
+                <span>Adults</span>
+                <button onclick="handleAdultChange(1)">+</button>
+            </div>
+            <div class="count" id="adultCount">1</div>
+            <!-- Kid Counter -->
+            <div class="counter">
+                <button onclick="handleKidChange(-1)">-</button>
+                <span>Kids</span>
+                <button onclick="handleKidChange(1)">+</button>
+            </div>
+            <div class="count" id="kidCount">1</div>
+            <button class="confirm-button" onclick="handleConfirm()">Confirm</button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize counts
+        let adults = 1;
+        let kids = 1;
+
+        // Functions to handle increment and decrement for adults and kids
+        function handleAdultChange(value) {
+            if (adults + value >= 0) {
+                adults += value;
+                document.getElementById('adultCount').innerText = adults;
+            }
+        }
+
+        function handleKidChange(value) {
+            if (kids + value >= 0) {
+                kids += value;
+                document.getElementById('kidCount').innerText = kids;
+            }
+        }
+
+        // Function to handle confirm button click
+        function handleConfirm() {
+            alert(`Confirmed ${adults} adults and ${kids} kids.`);
+        }
+    </script>
+
+</body>
+</html>

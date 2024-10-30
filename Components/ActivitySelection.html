@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Selection</title>
+    <link rel="stylesheet" href="../Styles/ActivitySelection.css">
+</head>
+<body>
+    <div class="activity-container">
+        <div class="activity-H3">Activity</div>
+        <div class="activity-cards" id="activityCards">
+            <!-- Activity cards will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let activities = []; // Store fetched activities
+        let activityCounts = []; // Track selection counts for each activity
+
+        const fetchActivities = async () => {
+            try {
+                const response = await axios.post('https://krushika.org/demo/sampath/apitest.php', {
+                    call_type: 1,
+                    call: 1430,
+                    purchase_id: "x",
+                    property_id: "x",
+                    checkin_date: "yyyy-mm-dd 00:00:00"
+                });
+
+                if (response.data.status === "success" && response.data.activities) {
+                    activities = response.data.activities;
+                    activityCounts = new Array(activities.length).fill(0); // Initialize counts for each activity
+                    renderActivities();
+                } else {
+                    console.error('Failed to fetch activities.');
+                }
+            } catch (error) {
+                console.error('Error fetching activities:', error);
+            }
+        };
+
+        const renderActivities = () => {
+            const activityCardsContainer = document.getElementById('activityCards');
+            activityCardsContainer.innerHTML = ''; // Clear previous content
+
+            activities.forEach((activity, index) => {
+                const activityCard = document.createElement('div');
+                activityCard.className = 'Activity-Placer';
+                activityCard.innerHTML = `
+                    <div class="activity-card">
+                        <img src="${activity.image || 'default-image.jpg'}" alt="${activity.name}" class="activity-image"> <!-- Assuming an image property -->
+                    </div>
+                    <div class='ActivityDescription'>
+                        <p>${activity.name} <br/>(${activity.points} Points)</p>
+                    </div>
+                    <div class="ACTcounter">
+                        <button onclick="handleDecrement(${index})">-</button>
+                        <span id="activityCount_${index}">${activityCounts[index]}</span>
+                        <button onclick="handleIncrement(${index})">+</button>
+                    </div>
+                `;
+                activityCardsContainer.appendChild(activityCard);
+            });
+        };
+
+        const handleIncrement = (index) => {
+            activityCounts[index] += 1;
+            document.getElementById(`activityCount_${index}`).innerText = activityCounts[index];
+            logActivityCounts(activityCounts);
+        };
+
+        const handleDecrement = (index) => {
+            if (activityCounts[index] > 0) {
+                activityCounts[index] -= 1;
+                document.getElementById(`activityCount_${index}`).innerText = activityCounts[index];
+                logActivityCounts(activityCounts);
+            }
+        };
+
+        // Function to log activity names and their counts
+        const logActivityCounts = (counts) => {
+            console.log("Selected Activity Counts:");
+            activities.forEach((activity, index) => {
+                console.log(`Activity: ${activity.name}, Count: ${counts[index]}`);
+            });
+        };
+
+        // Fetch activities when the page loads
+        fetchActivities();
+    </script>
+</body>
+</html>

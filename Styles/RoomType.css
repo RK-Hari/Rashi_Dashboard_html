@@ -1,0 +1,141 @@
+.room-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.room-type-container {
+    margin-bottom: 10px; /* Creates a gap between room types */
+}
+
+.room-header {
+    padding: 10px 20px; /* Consistent padding */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    position: relative; /* Added to ensure room-details can overlap if needed */
+    z-index: 1; /* Ensure header appears above details */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+.room-type h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.rooms-available {
+    color: green;
+    font-weight: bold;
+    font-size: 15px
+}
+
+.amenities {
+    display: flex;
+    gap: 5px;
+}
+.room-type p{
+    color: black;
+}
+.room-occupancy p{
+    color: black;
+}
+
+.room-occupancy {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.occupancy-icons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+
+}
+
+.room-details {
+    margin-top: -10px; /* Adjusted to move up */
+    background-color: #fcfcfc;
+    /* border-bottom: 1px solid black; */
+    padding: 10px 20px; /* Consistent padding */
+}
+
+.occupant-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.Room-counter {
+    z-index: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #004d43;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium shadow */
+}
+.single-room-details{
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+.Room-counter button {
+    background-color: #004d43;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.Room-counter span {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.Room-count {
+    font-size: 20px;
+    font-weight: 600;
+    width: 20px;
+    background-color: #ffffff;
+    color: #004d43;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 15px;
+    height: 40px;
+    padding: 1px 20px;
+    margin-right: 20px;
+    margin-left: -27px;
+    /* margin-top: px; */
+    border: 1px solid #004d43;
+}
+
+.meal-plans {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}

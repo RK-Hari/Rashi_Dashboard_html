@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest List with Date</title>
+    <link rel="stylesheet" href="../Styles/GuestWithDate.css">
+</head>
+<body>
+    <div class="guestWithDate-list">
+        <div class="GuestWithDate-H3">Guest List</div>
+        <div class="guestWithDate-counter-group">
+            <!-- Adult Counter -->
+            <div class="guestWithDate-container">
+                <div class="guestWithDate-counter">
+                    <button onclick="handleAdultChange(-1)">-</button>
+                    <span>Adults</span>
+                    <button onclick="handleAdultChange(1)">+</button>
+                </div>
+                <div class="guestWithDate-count" id="adultCount">1</div>
+            </div>
+            <!-- Kid Counter -->
+            <div class="guestWithDate-container">
+                <div class="guestWithDate-counter">
+                    <button onclick="handleKidChange(-1)">-</button>
+                    <span>Kids</span>
+                    <button onclick="handleKidChange(1)">+</button>
+                </div>
+                <div class="guestWithDate-count" id="kidCount">1</div>
+            </div>
+
+            <!-- Date -->
+            <div class="guestWithDate-container">
+                <div class="guestWithDate-counter">
+                    <span class="Date-span">Date</span>
+                </div>
+                <div class="span-date-counter">
+                    <div class="date-text-span">10-12-2024 - 12-01-2025</div>
+                </div>
+            </div>
+        </div>
+        <div class="guestWithDate-GuestList-edit">
+            <button class="guestWithDate-Edit-button" onclick="handleConfirm()">Edit</button>
+        </div>
+    </div>
+
+    <script>
+        // States for keeping track of number of adults and kids
+        let adults = 1;
+        let kids = 1;
+
+        // Functions to handle increment and decrement for adults and kids
+        function handleAdultChange(value) {
+            if (adults + value >= 0) {
+                adults += value;
+                document.getElementById('adultCount').innerText = adults;
+            }
+        }
+
+        function handleKidChange(value) {
+            if (kids + value >= 0) {
+                kids += value;
+                document.getElementById('kidCount').innerText = kids;
+            }
+        }
+
+        // Function to handle confirm button click
+        function handleConfirm() {
+            alert(`Confirmed ${adults} adults and ${kids} kids.`);
+        }
+    </script>
+</body>
+</html>

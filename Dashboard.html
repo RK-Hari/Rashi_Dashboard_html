@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Placeholder for MemberDetailsCard Component -->
+    <div id="dashboard-1" class="dashboard-1"></div>
+
+    <!-- Placeholder for Verification and Other Components -->
+    <div id="dashboard-2" class="dashboard-2"></div>
+
+    <!-- Placeholder for Client Membership and Cart Components -->
+    <div id="dashboard-3" class="dashboard-3"></div>
+  </div>
+
+  <script>
+    // Function to load a component HTML into a placeholder div
+    function loadComponent(filePath, containerId) {
+      fetch(filePath)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById(containerId).innerHTML += html;
+        })
+        .catch(error => console.error('Error loading component:', error));
+    }
+
+    // Load components into respective containers
+    loadComponent('Components/MemberDetailsCard.html', 'dashboard-1');
+    loadComponent('Components/Verification.html', 'dashboard-2');
+    loadComponent('Components/GuestList.html', 'dashboard-2');
+    loadComponent('Components/GuestWithDate.html', 'dashboard-2');
+    loadComponent('Components/RoomType.html', 'dashboard-2');
+    loadComponent('Components/UpcomingBookings.html', 'dashboard-2');
+    loadComponent('Components/CustomDatePicker.html', 'dashboard-2');
+    loadComponent('Components/BookingHistory.html', 'dashboard-2');
+    loadComponent('Components/ActivitySelection.html', 'dashboard-2');
+    loadComponent('Components/MemberDetails.html', 'dashboard-3');
+    loadComponent('Components/CartComponent.html', 'dashboard-3');
+  </script>
+</body>
+</html>

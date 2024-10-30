@@ -1,0 +1,227 @@
+/* Booking History Container */
+.member-history-booking-history-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+
+    max-height: 370px;
+    overflow-y: scroll;
+}
+
+.member-history-booking-history-container::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  .member-history-booking-history-container::-webkit-scrollbar-thumb {
+    background-color: #233d3d;
+    border-radius: 10px;
+  }
+  
+  .member-history-booking-history-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+  }
+  
+
+.member-history-heading-text{
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    color: #333333; /* Darker color for a refined text */
+    padding-bottom: 20px;
+}
+
+/* Booking Summary */
+.member-history-booking-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-history-booking-summary:hover {
+    background-color: #eefff1;
+    box-shadow: 0 4px 8px rgba(45, 72, 44, 0.3);
+}
+
+.member-history-hotel-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.member-history-checkin-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.member-history-points-spent {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #28a745;
+}
+
+/* Dropdown Icon */
+.member-history-dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.member-history-dropdown-icon.open {
+    transform: rotate(180deg);
+}
+
+/* Booking Details */
+.member-history-upcoming-bookings-container {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    padding: 15px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.member-history-upcoming-bookings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.member-history-upcoming-bookings-header-text {
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    color: #333333;
+}
+
+.member-history-upcoming-bookings-next-page {
+    font-size: 0.9rem;
+    color: #233d3d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.member-history-upcoming-bookings-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-history-upcoming-bookings-details {
+    flex: 1;
+}
+
+.member-history-upcoming-bookings-details p {
+    margin: 5px 0;
+}
+
+.member-history-upcoming-bookings-info {
+    flex: 1;
+    text-align: right;
+}
+
+.member-history-upcoming-bookings-info  p{
+    margin: 0 0 5px 0;
+}
+
+.member-history-upcoming-bookings-adult-count {
+    font-weight: 600;
+}
+
+.member-history-upcoming-bookings-activities {
+    flex: 1;
+    max-width: 300px;
+}
+
+.member-history-upcoming-bookings-activity-items {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+
+.member-history-activity-item {
+    background-color: #233d3d;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 90px;
+    font-size: 11px;
+}
+
+.member-history-activity-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: -10px;
+    margin-bottom: -6px;
+    margin-top: -6px;
+    height: 24px;
+    width: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.member-history-upcoming-bookings-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.member-history-upcoming-bookings-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.member-history-upcoming-bookings-points {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.member-history-booking-summary-heading{
+    display: flex;
+    flex-direction: row;
+    max-width: 550px;
+    justify-content: space-between;
+    margin-left: 10px;
+
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.member-history-hotel-heading-name,
+.member-history-checkin-heading-date,
+.member-history-points-heading-spent{
+    font-weight: 600;
+    color: #233d3d;
+}
+
+.member-history-points-heading-spent{
+    margin-right: 8px;
+}
+
+.member-history-checkin-heading-date{
+    margin-left: 40px;
+}

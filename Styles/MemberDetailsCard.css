@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
+.membercard-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.member-card{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 3px solid #233d3d;
+}
+
+.memeber-card-name{
+    color: #233d3d;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.member-card-resort{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #233d3d;
+}
+
+.member-card-active-status{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.member-card-active-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #28a745; /* Green color for active status */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+.member-card-sub-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-card-resort-and-active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.member-card-bottom-container{
+    border-radius: 5px;
+    height: fit-content;
+    background-color: #233d3d; 
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+}
+
+.member-card-bottom-container:hover{
+    transform: translateY(-2px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+}
+
+.membercard-bottom-icon{
+    height: 30px;
+}
+.membercard-container-checkin button {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.75rem;
+    width: 100%;
+    background-color: #233d3d;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.membercard-container-checkin button:hover {
+    background-color: #345a5a; 
+    box-shadow: 0 10px 15px rgba(49, 115, 82, 0.2), 0 4px 6px rgba(33, 105, 68, 0.1);
+}
+
+.membercard-container-checkin button:focus,
+.membercard-container-checkin button:active {
+    background-color: #233d3d;
+    box-shadow: none;
+    transform: scale(0.98); 
+}

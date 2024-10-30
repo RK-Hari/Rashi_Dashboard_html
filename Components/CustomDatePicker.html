@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/4.0.0/react-datepicker.min.css" />
+    <link rel="stylesheet" href="../Styles/CustomDatePicker.css"> <!-- Link to your CSS file -->
+    <title>Custom Date Picker</title>
+</head>
+<body>
+
+    <div class="calendar-container">
+        <div class="date-picker-section">
+            <div class="date-picker-header">Select The Date</div>
+            <input type="date" id="datePicker" min="2024-10-09" />
+        </div>
+
+        <div class="calender-div-2">
+            <div class="Avaliblity-msg-box" id="availabilityMsg" style="display: none;">
+                <h1>Not Available</h1>
+            </div>
+            <button class="availability-button" onclick="handleCheckAvailability()">
+                Check Availability
+            </button>
+            <p class="availability-availability" id="availabilityStatus"></p>
+        </div>
+    </div>
+
+    <script>
+        const minDate = new Date('2024-10-09');
+        const datePicker = document.getElementById('datePicker');
+        const availabilityMsg = document.getElementById('availabilityMsg');
+        const availabilityStatus = document.getElementById('availabilityStatus');
+
+        // Function to check availability on button click
+        async function handleCheckAvailability() {
+            const selectedDate = datePicker.value;
+            if (selectedDate) {
+                const formattedDate = new Date(selectedDate).toISOString().split('T')[0];
+                // Replace with your actual API call
+                const response = await fetch(`/api/check-availability?date=${formattedDate}`);
+                const data = await response.json();
+                availabilityStatus.innerText = data.available ? 'Available' : 'Not Available';
+                availabilityMsg.style.display = data.available ? 'none' : 'block';
+            } else {
+                alert('Please select a date first');
+            }
+        }
+    </script>
+
+</body>
+</html>

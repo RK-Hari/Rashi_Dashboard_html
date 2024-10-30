@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Verification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Verification.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="Verfication-container">
+        <div class="Verification-header">Member Verification</div>
+
+        <div class="Verification-input-container">
+            <div>
+                <input
+                    id="inputField"
+                    placeholder="Enter Phone Number"
+                    class="Verification-input"
+                    maxlength="10"
+                />
+                <button id="sendOtpButton">Send OTP</button>
+            </div>
+
+            <div>
+                <input
+                    id="otpField"
+                    placeholder="Enter OTP"
+                    class="Verification-input"
+                />
+                <button id="verifyButton">Verify</button>
+            </div>
+        </div>
+
+        <div class="Verification-checkbox-container">
+            <div class="Verification-checkbox-1">
+                <div class="Verfication-checkbox-sub">
+                    <div class="Verfifcation-checkbox-text">Phone Number</div>
+                    <input
+                        type="checkbox"
+                        class="verification-checkbox"
+                        id="phoneCheckbox"
+                        checked
+                    />
+                </div>
+                <div class="Verfication-checkbox-sub">
+                    <div class="Verfifcation-checkbox-text">Member ID</div>
+                    <input
+                        type="checkbox"
+                        class="verification-checkbox"
+                        id="memberIdCheckbox"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Scripts/Verification.js" defer></script> 
+</body>
+</html>

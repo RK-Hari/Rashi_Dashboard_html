@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+
+.cart-card {
+  height: fit-content;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+
+  margin-top: 10px;
+}
+
+.cart-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cart-detail {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total {
+  font-size: 0.9rem;
+}
+
+.cart-points {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

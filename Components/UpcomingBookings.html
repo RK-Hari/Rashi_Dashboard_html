@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Bookings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/UpcomingBookings.css">
+</head>
+<body>
+
+<div class="upcoming-bookings-container">
+    <div class="upcoming-bookings-header">
+        <div class="upcoming-bookings-heade-text">Upcoming Bookings</div>
+        <div class="upcoming-bookings-next-page" onclick="nextPage()">next Page &gt;</div>
+    </div>
+    
+    <div class="upcoming-bookings-body">
+        <div class="upcoming-bookings-details">
+            <p><strong>Accommodation</strong></p>
+            <p><span>Resort :</span> Shilhandhara</p>
+            <p><span>Room Type :</span> Chariot Room</p>
+        </div>
+        
+        <div class="upcoming-bookings-info">
+            <p class='upcoming-bookings-adult-count'>3x Adult &nbsp; 1x kid</p>
+            <p><span>Check In :</span> Tue 08 Oct 2024</p>
+            <p><span>Check Out :</span> Fri 09 Oct 2024</p>
+        </div>
+    </div>
+    
+    <div class="upcoming-bookings-footer">
+        <div class="upcoming-bookings-activities">
+            <p><strong>Activity</strong></p>
+            <div class="upcoming-bookings-activity-items">
+                <div class="activity-item">Paint Ball <span>x2</span></div>
+                <div class="activity-item">Tug Of War <span>x2</span></div>
+                <div class="activity-item">Quad <span>x2</span></div>
+                <div class="activity-item">Zip Line <span>x2</span></div>
+            </div>
+        </div>
+        
+        <div class='upcoming-bookings-bottom-container'>
+            <div class="upcoming-bookings-points">459 Points</div>
+            <div class="upcoming-bookings-actions">
+                <button class="upcoming-bookings-cancel" onclick="cancelBooking()">Cancel</button>
+                <button class="upcoming-bookings-confirm" onclick="confirmBooking()">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function nextPage() {
+        // Logic for next page action
+        alert('Navigating to the next page...');
+    }
+
+    function cancelBooking() {
+        // Logic for canceling the booking
+        alert('Booking canceled!');
+    }
+
+    function confirmBooking() {
+        // Logic for confirming the booking
+        alert('Booking confirmed!');
+    }
+</script>
+
+</body>
+</html>

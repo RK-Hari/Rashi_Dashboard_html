@@ -1,0 +1,106 @@
+.activity-container {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #ffffff;
+    border-radius: 10px;
+   
+    padding-left: 40px;
+    padding-right: 40px;
+  
+    padding-top: 15px;
+    padding-bottom: 20px;
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .activity-H3{
+    font-size: larger;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+    color: #333333; /* Darker color for a refined text */
+    margin-bottom: 15px;
+  }
+  
+  .activity-cards {
+    display: flex;
+    flex-wrap:wrap;
+    /* justify-content: center; */
+    gap: 30px; /* Space between cards */
+  }
+  .Activity-Card-Placement{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Activity-Placer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  
+  .activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 40px; /* Card width */
+    height: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkmark {
+    font-size: 24px; /* Size of checkmark */
+    margin-bottom: 10px; /* Space below checkmark */
+  }
+  
+  .ACTcounter {
+  
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    background-color: #004d43; /* Counter background */
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 30px; /* Set a height to ensure proper alignment */
+    color: white;
+  }
+  
+  .ACTcounter button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin: 0 5px; /* Add margin to space the buttons from the counter */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #004d43;
+    color: white;
+  }
+  
+  .ACTcounter span {
+    font-size: 20px; /* Set a font size for the counter number */
+    text-align: center; /* Center align text in the span */
+  }
+  
+  .ACTcounter button:hover {
+    color: #7a7a7a; /* Color on hover */
+  }
+  .ActivityDescription{
+    margin-bottom: -10px;
+    margin-top: -20px;
+    max-width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+  }

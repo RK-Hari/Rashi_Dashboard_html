@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/BookingHistory.css"> <!-- Link to your CSS file -->
+    <title>Booking History</title>
+</head>
+<body>
+
+    <div class="member-history-booking-history-container">
+        <div class="member-history-heading-text">Member History</div>
+        
+        <div class="member-history-booking-summary-heading">
+            <div class="member-history-hotel-heading-name">Name</div>
+            <div class="member-history-checkin-heading-date">Date</div>
+            <div class="member-history-points-heading-spent">Points</div>
+        </div>
+
+        <div class="member-history-booking-container">
+            <div class="member-history-booking-summary" onclick="toggleDetails(event)">
+                <div class="member-history-hotel-name">Shilhadhara</div>
+                <div class="member-history-checkin-date">Tue 08 Oct 2024</div>
+                <div class="member-history-points-spent">459 Points</div>
+                <div class="member-history-dropdown-icon">v</div>
+            </div>
+            <div class="member-history-upcoming-bookings-container" style="display: none;">
+                <div class="member-history-upcoming-bookings-body">
+                    <div class="member-history-upcoming-bookings-details">
+                        <p><strong>Accommodation</strong></p>
+                        <p><span>Resort :</span> Shilhadhara</p>
+                        <p><span>Room Type :</span> Chariot Room</p>
+                    </div>
+                    <div class="member-history-upcoming-bookings-info">
+                        <p class="member-history-upcoming-bookings-adult-count">3x Adult 1x Kid</p>
+                        <p><span>Check In :</span> Tue 08 Oct 2024</p>
+                        <p><span>Check Out :</span> Fri 09 Oct 2024</p>
+                    </div>
+                </div>
+                <div class="member-history-upcoming-bookings-footer">
+                    <div class="member-history-upcoming-bookings-activities">
+                        <p><strong>Activity</strong></p>
+                        <div class="member-history-upcoming-bookings-activity-items">
+                            <div class="member-history-activity-item">Paint Ball <span>x2</span></div>
+                            <div class="member-history-activity-item">Tug Of War <span>x2</span></div>
+                            <div class="member-history-activity-item">Quad <span>x2</span></div>
+                            <div class="member-history-activity-item">Zip Line <span>x2</span></div>
+                        </div>
+                    </div>
+                    <div class="member-history-upcoming-bookings-bottom-container">
+                        <div class="member-history-upcoming-bookings-points">459 Points</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-history-booking-container">
+            <div class="member-history-booking-summary" onclick="toggleDetails(event)">
+                <div class="member-history-hotel-name">Shilhadhara</div>
+                <div class="member-history-checkin-date">Tue 08 Oct 2024</div>
+                <div class="member-history-points-spent">350 Points</div>
+                <div class="member-history-dropdown-icon">v</div>
+            </div>
+            <div class="member-history-upcoming-bookings-container" style="display: none;">
+                <div class="member-history-upcoming-bookings-body">
+                    <div class="member-history-upcoming-bookings-details">
+                        <p><strong>Accommodation</strong></p>
+                        <p><span>Resort :</span> Shilhadhara</p>
+                        <p><span>Room Type :</span> Deluxe Room</p>
+                    </div>
+                    <div class="member-history-upcoming-bookings-info">
+                        <p class="member-history-upcoming-bookings-adult-count">2x Adult 2x Kid</p>
+                        <p><span>Check In :</span> Tue 08 Oct 2024</p>
+                        <p><span>Check Out :</span> Thu 09 Oct 2024</p>
+                    </div>
+                </div>
+                <div class="member-history-upcoming-bookings-footer">
+                    <div class="member-history-upcoming-bookings-activities">
+                        <p><strong>Activity</strong></p>
+                        <div class="member-history-upcoming-bookings-activity-items">
+                            <div class="member-history-activity-item">Paint Ball <span>x1</span></div>
+                            <div class="member-history-activity-item">Hiking <span>x1</span></div>
+                        </div>
+                    </div>
+                    <div class="member-history-upcoming-bookings-bottom-container">
+                        <div class="member-history-upcoming-bookings-points">350 Points</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(event) {
+            const summaryElement = event.currentTarget;
+            const detailsElement = summaryElement.nextElementSibling;
+            const isVisible = detailsElement.style.display === 'block';
+
+            detailsElement.style.display = isVisible ? 'none' : 'block';
+            const iconElement = summaryElement.querySelector('.member-history-dropdown-icon');
+            iconElement.classList.toggle('open', !isVisible);
+        }
+    </script>
+
+</body>
+</html>
